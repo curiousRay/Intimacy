@@ -52,9 +52,6 @@
 			$time_string
 		);
 		
-		
-		
-		
 		?>
 		<?php
 			edit_post_link(
@@ -68,4 +65,7 @@
 			);
 			?>
 	</footer><!-- .entry-footer -->
+
+	<hr/>
+
 </article><!-- #post-<?php the_ID(); ?> -->
