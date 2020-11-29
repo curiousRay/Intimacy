@@ -32,6 +32,21 @@
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 					
+			<nav class="site-nav">
+				<?php wp_nav_menu(array(
+					'theme_location' => 'primary',
+					'container'  => 'div', // if set to '', there is no container
+					'container_class' => 'c-class',
+					'container_id'  => 'c-id', 
+					'menu_class'   => 'm-class',  
+					'menu_id'   => 'm-id', 
+					'before' => '<span>',
+					'after'  => '</span>',
+					'link_before'  => '- ',  
+					'link_after'  => ' -',	
+					'items_wrap'  => '<div id="%1$s" class="items-wrap %2$s">%3$s</div>',
+					)); ?>
+			</nav><!-- .site-nav -->
 				
 			</div><!-- .site-header-main -->
 

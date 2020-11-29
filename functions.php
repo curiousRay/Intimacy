@@ -24,3 +24,11 @@ function intimacy_widgets_init() {
 	);
 }
 add_action( 'widgets_init', 'intimacy_widgets_init' );
+
+// register navigation menus
+function intimacy_menus_init() {
+		register_nav_menus(array(
+			'primary' => __('Primary Menu'),
+	));
+}
+add_action('init', 'intimacy_menus_init');
