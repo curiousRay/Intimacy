@@ -44,5 +44,11 @@ get_header(); ?>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 
-<?php get_sidebar(); ?>
+
+<?php if (is_active_sidebar( 'Sidebar-1' ) ) : ?>
+	<ul id="widget-sidebar">
+		<?php get_sidebar( 'Sidebar' ); ?>
+	</ul>
+<?php endif; ?>
+
 <? #php get_footer(); ?>
