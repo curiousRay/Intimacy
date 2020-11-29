@@ -35,7 +35,7 @@ add_action('init', 'intimacy_menus_init');
 
 // register styles, scripts, etc.
 function intimacy_scripts() {
-	wp_enqueue_style( 'intimacy-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'intimacy-style', get_stylesheet_directory_uri()."/scss/style.css" );
 }
 add_action('wp_enqueue_scripts', 'intimacy_scripts');
 
