@@ -5,12 +5,8 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
+	<main id="main" class="site-main" role="main">
 		<?php if ( have_posts() ) : ?>
-
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title"><?php single_post_title(); ?></h1>
@@ -21,7 +17,6 @@ get_header(); ?>
 			// Start the loop.
 			while ( have_posts() ) :
 				the_post();
-
 				/*
 				 * Include the Post-Format-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
@@ -29,21 +24,13 @@ get_header(); ?>
 				 * will be used instead.
 				 */
 				get_template_part( 'template-parts/content', get_post_format() );
-
 				// End the loop.
 			endwhile;
-
-
-			// If no content, include the "No posts found" template.
-		else :
+				// If no content, include the "No posts found" template.
+			else :
 			#get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
-
+		endif; ?>
+	</main><!-- .site-main -->
 
 <?php if (is_active_sidebar( 'Sidebar-1' ) ) : ?>
 	<ul id="widget-sidebar">
@@ -51,4 +38,4 @@ get_header(); ?>
 	</ul>
 <?php endif; ?>
 
-<? #php get_footer(); ?>
+<?php get_footer(); ?>

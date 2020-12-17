@@ -4,6 +4,7 @@ if ( ! function_exists( 'intimacy_setup' ) ) :
 	function intimacy_setup() {
 		// Load regular editor styles into the new block-based editor.
 		// add_theme_support( 'editor-styles' );
+		do_clean_tags();
 	}
 endif;
 add_action('after_setup_theme', 'intimacy_setup' );
@@ -39,27 +40,30 @@ add_action('init', 'intimacy_menus_init');
 // register styles, scripts, etc.
 function intimacy_scripts() {
 	wp_enqueue_style( 'intimacy-style', get_stylesheet_directory_uri()."/scss/style.css" );
+	wp_deregister_script( 'wp-embed' );
 }
 add_action('wp_enqueue_scripts', 'intimacy_scripts');
 
-remove_action('wp_head','rsd_link');
-remove_action('wp_head','wlwmanifest_link');
-remove_action('wp_head', 'wp_generator'); // remove wp version info
+function do_clean_tags() {
+	remove_action('wp_head','rsd_link');
+	remove_action('wp_head','wlwmanifest_link');
+	remove_action('wp_head', 'wp_generator'); // remove wp version info
 
-// remove wp-json link
-add_filter('rest_enabled', '_returned_false');
-add_filter('rest_jsonp_enabled', '_returned_false');
-remove_action('wp_head', 'rest_output_link_wp_head', 10);
-remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
+	// remove wp-json link
+	add_filter('rest_enabled', '_returned_false');
+	add_filter('rest_jsonp_enabled', '_returned_false');
+	remove_action('wp_head', 'rest_output_link_wp_head', 10);
+	remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 
-// remove wp-emoji
-remove_action( 'admin_print_scripts', 'print_emoji_detection_script');
-remove_action( 'admin_print_styles', 'print_emoji_styles');
-remove_action( 'wp_head', 'print_emoji_detection_script', 7);
-remove_action( 'wp_print_styles', 'print_emoji_styles');
-remove_filter( 'the_content_feed', 'wp_staticize_emoji');
-remove_filter( 'comment_text_rss', 'wp_staticize_emoji');
-remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email');
+	// remove wp-emoji
+	remove_action( 'admin_print_scripts', 'print_emoji_detection_script');
+	remove_action( 'admin_print_styles', 'print_emoji_styles');
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7);
+	remove_action( 'wp_print_styles', 'print_emoji_styles');
+	remove_filter( 'the_content_feed', 'wp_staticize_emoji');
+	remove_filter( 'comment_text_rss', 'wp_staticize_emoji');
+	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email');
 
-// remove dns-prefetch
-remove_action( 'wp_head', 'wp_resource_hints', 2 );
+	// remove dns-prefetch
+	remove_action( 'wp_head', 'wp_resource_hints', 2 );
+}

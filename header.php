@@ -8,8 +8,6 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-	<div class="site-inner">
 
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-main">
@@ -45,8 +43,6 @@
 			</nav><!-- .site-nav -->
 				
 			</div><!-- .site-header-main -->
-
-		
 		</header><!-- .site-header -->
 
 		<div id="content" class="site-content">
