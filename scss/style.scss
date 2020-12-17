@@ -2,6 +2,13 @@
 Theme Intimacy styling entrance
 */
 
+@import 'libs/mixins';
+@import 'libs/vars';
+
+@import 'layout/header';
+
+
+
 $color: blue;
 
 .site-description {

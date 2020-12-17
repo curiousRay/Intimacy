@@ -1,0 +1,13 @@
+header {
+  position: relative;
+  
+  @include pc {
+    padding-top: 5em;
+    background-color: red;
+  }
+
+  @include phone {
+    padding-top: 4em;
+    background-color: blue;
+  }
+}
