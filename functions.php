@@ -11,6 +11,9 @@ add_action('after_setup_theme', 'intimacy_setup' );
 
 // register a widget area
 function intimacy_widgets_init() {
+	global $wp_widget_factory;
+	remove_action('wp_head', array($wp_widget_factory ->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
+
 	register_sidebar(
 		array(
 			'name'          => __( 'Sidebar', 'intimacy' ),
@@ -39,3 +42,24 @@ function intimacy_scripts() {
 }
 add_action('wp_enqueue_scripts', 'intimacy_scripts');
 
+remove_action('wp_head','rsd_link');//移除head中的rel="EditURI"
+remove_action('wp_head','wlwmanifest_link');//移除head中的rel="wlwmanifest"
+remove_action('wp_head', 'wp_generator'); // remove wp version info
+
+// remove wp-json link
+add_filter('rest_enabled', '_returned_false');
+add_filter('rest_jsonp_enabled', '_returned_false');
+remove_action('wp_head', 'rest_output_link_wp_head', 10);
+remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
+
+//删除emoji脚本
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script');
+remove_action( 'admin_print_styles', 'print_emoji_styles');
+remove_action( 'wp_head', 'print_emoji_detection_script', 7);
+remove_action( 'wp_print_styles', 'print_emoji_styles');
+remove_filter( 'the_content_feed', 'wp_staticize_emoji');
+remove_filter( 'comment_text_rss', 'wp_staticize_emoji');
+remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email');
+
+// remove dns-prefetch
+remove_action( 'wp_head', 'wp_resource_hints', 2 );
