@@ -9,7 +9,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 	<div class="container extended flex">
-		<header id="masthead" class="site-header" role="banner">
+		<aside class="site-header" role="banner">
 			<div class="site-header-main">
 				<div class="site-branding">
 					<?php if ( is_front_page() && is_home() ) : ?>
@@ -49,6 +49,6 @@
 			<?php endif; ?>
 
 			</div><!-- .site-header-main -->
-		</header><!-- .site-header -->
+			</aside><!-- .site-header -->
 
-		<div id="content" class="site-content">
+		<main class="site-main">

@@ -5,11 +5,11 @@
  */
 
 get_header(); ?>
-	<main id="main" class="site-main" role="main">
+	<section class="article-list">
 		<?php if ( have_posts() ) : ?>
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<h1 class="page-title"><?php single_post_title(); ?></h1>
+					<h1><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
 
@@ -30,8 +30,7 @@ get_header(); ?>
 			else :
 			#get_template_part( 'template-parts/content', 'none' );
 		endif; ?>
-	</main><!-- .site-main -->
+	</section>
 
-
-
+<pagination></pagination>
 <?php get_footer(); ?>
