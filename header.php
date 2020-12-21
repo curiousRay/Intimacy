@@ -10,7 +10,6 @@
 <?php wp_body_open(); ?>
 	<div class="container extended flex">
 		<aside class="site-header" role="banner">
-			<div class="site-header-main">
 				<div class="site-branding">
 					<?php if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -42,13 +41,10 @@
 					)); ?>
 			</nav><!-- .site-nav -->
 				
-			<?php if (is_active_sidebar( 'Sidebar-1' ) ) : ?>
-				<ul id="widget-sidebar">
-					<?php get_sidebar( 'Sidebar' ); ?>
-				</ul>
+			<?php if (is_active_sidebar( 'sidebar-1' ) ) : ?>
+					<?php get_sidebar(); ?>
 			<?php endif; ?>
 
-			</div><!-- .site-header-main -->
 			</aside><!-- .site-header -->
 
 		<main class="site-main">
