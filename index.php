@@ -32,10 +32,6 @@ get_header(); ?>
 		endif; ?>
 	</main><!-- .site-main -->
 
-<?php if (is_active_sidebar( 'Sidebar-1' ) ) : ?>
-	<ul id="widget-sidebar">
-		<?php get_sidebar( 'Sidebar' ); ?>
-	</ul>
-<?php endif; ?>
+
 
 <?php get_footer(); ?>

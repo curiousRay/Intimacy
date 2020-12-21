@@ -4,10 +4,7 @@
  */
 ?>
 
-		</div><!-- .site-content -->
-
-		<footer id="colophon" class="site-footer" role="contentinfo">	
-
+<footer id="colophon" class="site-footer" role="contentinfo">	
 				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>" class="imprint">
 					<?php
@@ -16,7 +13,11 @@
 					?>
 				</a>
 		</footer><!-- .site-footer -->
+		<?php wp_footer(); ?>
+		</div><!-- .site-content -->
 
-<?php wp_footer(); ?>
+		
+
+</div>
 </body>
 </html>

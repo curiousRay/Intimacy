@@ -8,7 +8,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-
+	<div class="container extended flex">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-main">
 				<div class="site-branding">
@@ -42,6 +42,12 @@
 					)); ?>
 			</nav><!-- .site-nav -->
 				
+			<?php if (is_active_sidebar( 'Sidebar-1' ) ) : ?>
+				<ul id="widget-sidebar">
+					<?php get_sidebar( 'Sidebar' ); ?>
+				</ul>
+			<?php endif; ?>
+
 			</div><!-- .site-header-main -->
 		</header><!-- .site-header -->
 

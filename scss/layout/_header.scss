@@ -3,11 +3,16 @@ header {
   
   @include pc {
     padding-top: 5em;
-    background-color: red;
+    background-color: lightblue;
+  }
+
+  @include tablet {
+    padding-top: 5em;
+    background-color: lightgreen;
   }
 
   @include phone {
     padding-top: 4em;
-    background-color: blue;
+    background-color: lightcoral;
   }
 }

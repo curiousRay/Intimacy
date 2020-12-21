@@ -14,3 +14,27 @@ $color: blue;
 .site-description {
   color: $color;
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.extended {
+  @include pc {
+    max-width: 1024px;
+  }
+
+  @include tablet {
+    max-width: 950px;
+  }
+
+  @include phone {
+    max-width: 630px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
