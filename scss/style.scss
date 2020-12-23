@@ -38,3 +38,8 @@ $color: blue;
   display: flex;
   flex-direction: row;
 }
+
+.bg-texture {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2NMqL7ty0AEYAQpXNCqupmQ2lGFeEOI6OABAHJZJg6g8xcJAAAAAElFTkSuQmCC) repeat;
+  background-size: 20px 20px;
+}

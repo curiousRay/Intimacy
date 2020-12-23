@@ -3,7 +3,7 @@ header {
   
   @include pc {
     padding-top: 5em;
-    background-color: lightblue;
+    background-color: transparent;
   }
 
   @include tablet {

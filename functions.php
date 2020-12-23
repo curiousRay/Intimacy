@@ -67,3 +67,12 @@ function do_clean_tags() {
 	// remove dns-prefetch
 	remove_action( 'wp_head', 'wp_resource_hints', 2 );
 }
+
+// add custom class to body tag, show different styles for each category
+function custom_body_class_by_category($classes) {
+	if ( in_category( 'uncategorized' ) ) {
+		$classes[] = 'bg-texture';
+	}
+	return $classes;
+}
+add_filter('body_class', 'custom_body_class_by_category');
