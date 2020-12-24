@@ -10,6 +10,7 @@ Theme Intimacy styling entrance
 
 
 $color: blue;
+$texture-tile-size: 20px;
 
 .site-description {
   color: $color;
@@ -41,5 +42,13 @@ $color: blue;
 
 .bg-texture {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2NMqL7ty0AEYAQpXNCqupmQ2lGFeEOI6OABAHJZJg6g8xcJAAAAAElFTkSuQmCC) repeat;
-  background-size: 20px 20px;
+  background-size: $texture-tile-size $texture-tile-size;
+}
+
+.content-single-box {
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 8px 8px rgba($color: #000, $alpha: .15);
+  border-left: 40px solid #eee;
 }
