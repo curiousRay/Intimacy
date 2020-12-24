@@ -10,7 +10,7 @@
 			<span class="sticky-post">置顶文章↑</span>
 		<?php endif; ?>
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 	</header><!-- .entry-header -->
 
 		
@@ -44,7 +44,7 @@
 		);
 
 		printf(
-			'<span class="posted-on"><span class="screen-reader-text">%1$s </span><a href="%2$s" rel="bookmark">%3$s</a></span>',
+			'<span class="posted-on"><span>%1$s </span><a href="%2$s">%3$s</a></span>',
 			_x( 'Posted on', 'Used before publish date.', 'intimacy' ),
 			esc_url( get_permalink() ),
 			$time_string
