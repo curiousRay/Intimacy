@@ -76,3 +76,6 @@ function custom_body_class_by_category($classes) {
 	return $classes;
 }
 add_filter('body_class', 'custom_body_class_by_category');
+
+
+
