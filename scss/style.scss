@@ -52,3 +52,30 @@ $texture-tile-size: 20px;
   box-shadow: 8px 8px rgba($color: #000, $alpha: .15);
   border-left: 40px solid #eee;
 }
+
+#submit {
+  background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+  background-color:#44c767;
+  border-radius:3px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+  } 
+  #submit:hover {
+  background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+  background-color:#5cbf2a; 
+  }
+  #submit:focus {
+     outline-color: yellow;
+    //  change border color from black to else, can be 'none', also useable for textform etc.
+    }
+  #submit:active { 
+  position:relative;
+  top:1px;
+  }

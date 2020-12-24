@@ -103,7 +103,17 @@ if ( post_password_required() ) {
     .'<label for="wp-comment-cookies-consent">'
     .__('Remenber me for the next time I comment', 'textdomain')
     .'</label></p>';
-    
+
+//     // define the comment_form_submit_button callback
+// function filter_comment_form_submit_button( $submit_button, $args ) {
+//   // make filter magic happen here...
+//   $submit_before = '<div class="form-group">';
+//   $submit_after = '</div>';
+//   return $submit_before . $submit_button . $submit_after;
+// };
+// // add the filter
+// add_filter( 'comment_form_submit_button', 'filter_comment_form_submit_button', 10, 2 );
+
     $comments_args = array(
       'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
       'title_reply_after'  => '</h2>',
