@@ -5,61 +5,68 @@ header {
   position: relative;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   header {
-    padding-top: 5em;
-    background-color: transparent;
+    background-color: lightblue;
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 1024px) {
+@media screen and (min-width: 760px) and (max-width: 1023px) {
   header {
-    padding-top: 5em;
     background-color: lightgreen;
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 760px) {
   header {
-    padding-top: 4em;
     background-color: lightcoral;
   }
 }
 
+.site-title {
+  font-size: 1.5em;
+  padding-block-start: .65em;
+  padding-block-end: .65em;
+  font-weight: bold;
+}
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1.5em auto 0 auto;
 }
 
-.site-main {
-  margin-top: 0px;
-}
-
-@media screen and (min-width: 640px) and (max-width: 1024px) {
+@media screen and (min-width: 1023px) {
   .site-main {
-    margin-right: 0px;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 760px) and (max-width: 1023px) {
   .site-main {
-    margin-right: 0px;
+    margin-left: .5em;
+    margin-right: 1em;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 760px) {
+  .site-main {
+    margin-right: .5em;
+  }
+}
+
+@media screen and (min-width: 1023px) {
   .extended {
     max-width: 1024px;
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 1024px) {
+@media screen and (min-width: 760px) and (max-width: 1023px) {
   .extended {
     max-width: 950px;
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 760px) {
   .extended {
     max-width: 630px;
   }
@@ -78,23 +85,28 @@ header {
   margin-top: 0px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   .site-header {
     width: 50%;
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-  .site-header {
-    width: 35.3%;
-    margin-left: 0px;
+    margin-left: 1.5em;
     margin-right: 0px;
   }
 }
 
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .site-header {
+    width: 35.3%;
+    margin-left: 1.5em;
+    margin-right: 0px;
+  }
+}
+
+.site-banner {
+  background-color: yellow;
+}
+
 .sidebar {
-  background-color: lightgray;
+  background-color: goldenrod;
 }
 
 .content-single-card {
@@ -102,15 +114,16 @@ header {
   z-index: 10;
   background: #fff;
   box-shadow: 8px 8px rgba(0, 0, 0, 0.15);
+  padding: 1.618em 3.236em;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   .content-single-card {
     border-left: 10px solid #eee;
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 1024px) {
+@media screen and (min-width: 760px) and (max-width: 1023px) {
   .content-single-card {
     border-left: 10px solid #eee;
   }
@@ -126,7 +139,6 @@ body {
 
 .bg-texture {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2NMqL7ty0AEYAQpXNCqupmQ2lGFeEOI6OABAHJZJg6g8xcJAAAAAElFTkSuQmCC) repeat;
-  background-size: 20px 20px;
 }
 
 #submit {
