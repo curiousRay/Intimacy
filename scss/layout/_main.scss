@@ -1,0 +1,79 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-main {
+  margin-top: 0px;
+
+  @include tablet {
+    margin-right: 0px;
+  }
+  
+  @include phone {
+    margin-right: 0px;
+  }
+}
+
+.extended {
+  @include pc {
+    max-width: 1024px;
+  }
+
+  @include tablet {
+    max-width: 950px;
+  }
+
+  @include phone {
+    max-width: 630px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.site-header {
+  margin-top: 0px;
+
+  @include pc {
+    width: 50%;
+    margin-right: 30px;
+  }
+
+  @include tablet {
+    width: 35.3%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  // @include phone {
+  //   padding-top: 4em;
+  //   background-color: lightcoral;
+  // }
+}
+
+.sidebar {
+  background-color: lightgray;
+}
+
+.content-single-card {
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 8px 8px rgba($color: #000, $alpha: .15);
+  
+  @include pc {
+    border-left: 10px solid #eee;
+  }
+  
+  @include tablet {
+    border-left: 10px solid #eee;
+  }
+
+}

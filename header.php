@@ -9,7 +9,8 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 	<div class="container extended flex">
-		<aside class="site-header" role="banner">
+		<aside class="site-header">
+			<div class="site-banner">
 				<div class="site-branding">
 					<?php if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -25,7 +26,7 @@
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 					
-			<nav class="site-nav">
+				<nav class="site-nav">
 				<?php wp_nav_menu(array(
 					'theme_location' => 'primary',
 					'container'  => 'div', // if set to '', there is no container
@@ -39,12 +40,12 @@
 					'link_after'  => ' -',	
 					'items_wrap'  => '<div id="%1$s" class="items-wrap %2$s">%3$s</div>',
 					)); ?>
-			</nav><!-- .site-nav -->
-				
+				</nav><!-- .site-nav -->
+			</div><!-- .site-banner -->
 			<?php if (is_active_sidebar( 'sidebar-1' ) ) : ?>
 					<?php get_sidebar(); ?>
 			<?php endif; ?>
 
 			</aside><!-- .site-header -->
 
-		<main class="site-main">
+		<main class="site-main full-width">

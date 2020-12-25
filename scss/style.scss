@@ -6,8 +6,12 @@ Theme Intimacy styling entrance
 @import 'libs/vars';
 
 @import 'layout/header';
+@import 'layout/main';
+@import 'layout/sidebar';
 
-
+body {
+  margin: 0 0 0 0;
+}
 
 $color: blue;
 $texture-tile-size: 20px;
@@ -16,42 +20,13 @@ $texture-tile-size: 20px;
   color: $color;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.extended {
-  @include pc {
-    max-width: 1024px;
-  }
-
-  @include tablet {
-    max-width: 950px;
-  }
-
-  @include phone {
-    max-width: 630px;
-  }
-}
-
-.flex {
-  display: flex;
-  flex-direction: row;
-}
 
 .bg-texture {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2NMqL7ty0AEYAQpXNCqupmQ2lGFeEOI6OABAHJZJg6g8xcJAAAAAElFTkSuQmCC) repeat;
   background-size: $texture-tile-size $texture-tile-size;
 }
 
-.content-single-card {
-  position: relative;
-  z-index: 10;
-  background: #fff;
-  box-shadow: 8px 8px rgba($color: #000, $alpha: .15);
-  border-left: 40px solid #eee;
-}
+
 
 #submit {
   background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
