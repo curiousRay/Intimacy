@@ -123,6 +123,15 @@ if ( post_password_required() ) {
     }
     add_filter('comment_form_default_fields', 'wp_remove_comment_url');
 
+    // move comment textbox after name&email fields
+    function move_comment_field_to_bottom( $fields ) {
+      $comment_field = $fields['comment'];
+      unset( $fields['comment'] );
+      $fields['comment'] = $comment_field;
+      return $fields;
+    }
+    add_filter( 'comment_form_fields', 'move_comment_field_to_bottom' );
+
     comment_form($comments_args);
 		?>
 
