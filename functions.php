@@ -70,6 +70,10 @@ function do_clean_tags() {
 
 // add custom class to body tag, show different styles for each category
 function custom_body_class_by_category($classes) {
+	if ( is_front_page() && is_home() ) {
+		$classes[] = 'bg-texture';
+	}
+
 	if ( in_category( 'uncategorized' ) ) {
 		$classes[] = 'bg-texture';
 	}
