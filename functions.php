@@ -74,7 +74,7 @@ function custom_body_class_by_category($classes) {
 		$classes[] = 'bg-texture';
 	}
 
-	if ( in_category( 'uncategorized' ) ) {
+	if ( in_category( 'uncategorized' ) || in_category( 'life' ) ) {
 		$classes[] = 'bg-texture';
 	}
 	return $classes;

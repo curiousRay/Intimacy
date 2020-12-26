@@ -71,8 +71,9 @@ if ( post_password_required() ) {
     $commenter = wp_get_current_commenter();
     $req = get_option( 'require_name_email' );
     $aria_req = ( $req ? " aria-required='true'" : '' );
-    $fields =  array('author' => 
-      '<p class="comment-form-author">'
+    $title_reply = '<h2 id="reply-title" class="comment-reply-title">Write me</h2>';
+    $fields =  array('author' => $title_reply
+      .'<p class="comment-form-author">'
       . '<label for="author">' . __( 'Name' ) . '</label> '
       . ( $req ? '<span class="required">*</span>' : '' )
       . '<input id="author" name="author" type="text" value="'
@@ -92,16 +93,17 @@ if ( post_password_required() ) {
     .$consent
     .' />'
     .'<label for="wp-comment-cookies-consent">'
-    .__('Remenber me for the next time I comment', 'textdomain')
+    .__('Remember me for the next time I comment', 'textdomain')
     .'</label></p>';
 
     $comments_args = array(
-      'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
-      'title_reply_after'  => '</h2>',
-      'title_reply' => 'Write me',
+      'title_reply_before' => '',
+      'title_reply_after'  => '',
+      'title_reply' => '',
       'comment_notes_before' => '',
+      'comment_notes_after' => '',
       'fields' =>  $fields,
-      'label_submit' => 'SEND MESSAGE'
+        
     );
     
     // customize comment field
@@ -111,7 +113,8 @@ if ( post_password_required() ) {
       . _x( 'Message', 'noun' )
       . '</label> <textarea placeholder="'
       . _x( 'Write text here...', 'noun' )
-      . '" id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>';
+      . '" id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>'
+      . '<input name="submit" type="submit" id="submit" class="submit" value="SEND MESSAGE"></p>';
       return $defaults;
     }
     add_filter('comment_form_defaults', 'custom_comment_field', 10);
@@ -131,6 +134,16 @@ if ( post_password_required() ) {
       return $fields;
     }
     add_filter( 'comment_form_fields', 'move_comment_field_to_bottom' );
+
+
+
+    add_action('comment_form_before_fields', function(){
+      echo '<div>';
+    });
+    add_action('comment_form_after_fields', function(){
+      echo '</div>';
+    });
+
 
     comment_form($comments_args);
 		?>
