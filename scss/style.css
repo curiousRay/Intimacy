@@ -56,7 +56,7 @@ header {
 
 @media screen and (min-width: 1023px) {
   .extended {
-    max-width: 1024px;
+    max-width: 1240px;
   }
 }
 
@@ -129,18 +129,6 @@ header {
   }
 }
 
-body {
-  margin: 0 0 0 0;
-}
-
-.site-description {
-  color: blue;
-}
-
-.bg-texture {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2NMqL7ty0AEYAQpXNCqupmQ2lGFeEOI6OABAHJZJg6g8xcJAAAAAElFTkSuQmCC) repeat;
-}
-
 #submit {
   background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
   background-color: #44c767;
@@ -168,4 +156,16 @@ body {
 #submit:active {
   position: relative;
   top: 1px;
+}
+
+body {
+  margin: 0 0 0 0;
+}
+
+.site-description {
+  color: blue;
+}
+
+.bg-texture {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2NMqL7ty0AEYAQpXNCqupmQ2lGFeEOI6OABAHJZJg6g8xcJAAAAAElFTkSuQmCC) repeat;
 }
