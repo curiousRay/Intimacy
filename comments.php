@@ -102,6 +102,7 @@ if ( post_password_required() ) {
       'title_reply' => '',
       'comment_notes_before' => '',
       'comment_notes_after' => '',
+      'label_submit' => 'SEND MESSAGE',
       'fields' =>  $fields,
         
     );
@@ -113,18 +114,16 @@ if ( post_password_required() ) {
       . _x( 'Message', 'noun' )
       . '</label> <textarea placeholder="'
       . _x( 'Write text here...', 'noun' )
-      . '" id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>'
-      . '<input name="submit" type="submit" id="submit" class="submit" value="SEND MESSAGE"></p>';
+      . '" id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>';
       return $defaults;
     }
     add_filter('comment_form_defaults', 'custom_comment_field', 10);
 
     // remove url in comment form
-    function wp_remove_comment_url($arg) {
+    add_filter('comment_form_default_fields', function($arg) {
       $arg['url'] = '';
       return $arg;
-    }
-    add_filter('comment_form_default_fields', 'wp_remove_comment_url');
+    });
 
     // move comment textbox after name&email fields
     function move_comment_field_to_bottom( $fields ) {
@@ -138,12 +137,12 @@ if ( post_password_required() ) {
 
 
     add_action('comment_form_before_fields', function(){
-      echo '<div>';
+      echo '<div id="comment-left">';
     });
     add_action('comment_form_after_fields', function(){
-      echo '</div>';
+      echo '</div><div id="comment-right">';
     });
-
+    
 
     comment_form($comments_args);
 		?>

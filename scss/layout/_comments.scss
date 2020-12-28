@@ -26,8 +26,20 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
   
 .form-submit {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#comment-left {
+  flex: 0.382;
+}
+#comment-right {
+  flex: 0.618;
 }
