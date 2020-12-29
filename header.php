@@ -42,9 +42,9 @@
 					)); ?>
 				</nav><!-- .site-nav -->
 			</div><!-- .site-banner -->
-			<?php if (is_active_sidebar( 'sidebar-1' ) ) : ?>
-					<?php get_sidebar(); ?>
-			<?php endif; ?>
+			<?php # if (is_active_sidebar( 'sidebar-1' ) ) : ?>
+					<?php # get_sidebar(); ?>
+			<?php # endif; ?>
 
 			</aside><!-- .site-header -->
 
