@@ -11,7 +11,7 @@
 
 	<div class="entry-content">
 		<?php
-      the_content(null, true);
+      the_content();
     ?>
 	</div><!-- .entry-content -->
 

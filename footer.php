@@ -4,7 +4,10 @@
  */
 ?>
 
-						<footer class="site-footer">	
+						
+			</main><!-- .site-main -->
+		</div>
+		<footer class="site-footer">	
 						<span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>">
 						<?php
@@ -14,7 +17,5 @@
 					</a>
 					</footer><!-- .site-footer -->
 				<?php wp_footer(); ?>
-			</main><!-- .site-main -->
-		</div>
 	</body>
 </html>
