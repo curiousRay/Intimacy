@@ -103,8 +103,7 @@ if ( post_password_required() ) {
       'comment_notes_before' => '',
       'comment_notes_after' => '',
       'label_submit' => 'SEND MESSAGE',
-      'fields' =>  $fields,
-        
+      'fields' =>  $fields
     );
     
     // customize comment field
@@ -143,6 +142,14 @@ if ( post_password_required() ) {
       echo '</div><div id="comment-right">';
     });
     
+    add_action('comment_form_logged_in_before', function(){
+      echo '<div id="comment-left">';
+    });
+    add_action('comment_form_logged_in_after', function(){
+      echo '<div id="comment-right">';
+    });
+    // add_filter( 'comment_form_logged_in', '__return_empty_string' );
+
 
     comment_form($comments_args);
 		?>
