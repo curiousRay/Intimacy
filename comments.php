@@ -103,7 +103,18 @@ if ( post_password_required() ) {
       'comment_notes_before' => '',
       'comment_notes_after' => '',
       'label_submit' => 'SEND MESSAGE',
-      'fields' =>  $fields
+      'fields' =>  $fields,
+      'logged_in_as' => sprintf(
+        '<div id="comment-left">
+        '.$title_reply.'
+        <p class="logged-in-as">%s</p></div>',
+        sprintf(__( '<a href="%1$s" aria-label="%2$s">Logged in as %3$s</a>. <a href="%4$s">Log out?</a>' ),
+          get_edit_user_link(),
+          esc_attr( sprintf( __( 'Logged in as %s. Edit your profile.' ), $user_identity ) ),
+          $user_identity,
+          wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ), $post_id ) )
+        )
+      )
     );
     
     // customize comment field
@@ -125,16 +136,15 @@ if ( post_password_required() ) {
     });
 
     // move comment textbox after name&email fields
-    function move_comment_field_to_bottom( $fields ) {
+    add_filter( 'comment_form_fields',  function( $fields ) {
       $comment_field = $fields['comment'];
       unset( $fields['comment'] );
       $fields['comment'] = $comment_field;
       return $fields;
-    }
-    add_filter( 'comment_form_fields', 'move_comment_field_to_bottom' );
+    });
 
 
-
+    // configure unlogged-in comment box layout
     add_action('comment_form_before_fields', function(){
       echo '<div id="comment-left">';
     });
@@ -142,12 +152,12 @@ if ( post_password_required() ) {
       echo '</div><div id="comment-right">';
     });
     
-    add_action('comment_form_logged_in_before', function(){
-      echo '<div id="comment-left">';
-    });
+    // configure logged-in comment box layout
     add_action('comment_form_logged_in_after', function(){
       echo '<div id="comment-right">';
     });
+
+    // remove "Logged in as ... Log out?"
     // add_filter( 'comment_form_logged_in', '__return_empty_string' );
 
 
