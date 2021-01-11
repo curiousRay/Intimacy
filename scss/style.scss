@@ -26,3 +26,7 @@ $texture-tile-size: 20px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2NMqL7ty0AEYAQpXNCqupmQ2lGFeEOI6OABAHJZJg6g8xcJAAAAAElFTkSuQmCC) repeat;
   // background-size: $texture-tile-size $texture-tile-size;
 }
+
+.bg-texture-homepage {
+  background-color: #f9fafb;
+}

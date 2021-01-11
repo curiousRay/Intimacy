@@ -129,6 +129,17 @@ header {
   }
 }
 
+.comments-area {
+  background-color: white;
+  padding: 1.618em 3.236em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.comment-list, .children {
+  list-style: none;
+}
+
 #submit:hover {
   background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
   background-color: #5cbf2a;
@@ -184,4 +195,8 @@ body {
 
 .bg-texture {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2NMqL7ty0AEYAQpXNCqupmQ2lGFeEOI6OABAHJZJg6g8xcJAAAAAElFTkSuQmCC) repeat;
+}
+
+.bg-texture-homepage {
+  background-color: #f9fafb;
 }

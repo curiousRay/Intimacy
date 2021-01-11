@@ -1,3 +1,14 @@
+.comments-area {
+  background-color: white;
+  padding: 1.618em 3.236em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.comment-list, .children {
+  list-style: none;
+}
+
 #submit {
   
   &:hover {
