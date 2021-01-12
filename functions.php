@@ -40,8 +40,8 @@ add_action('init', 'intimacy_menus_init');
 
 // register styles, scripts, etc.
 function intimacy_scripts() {
-	wp_enqueue_style( 'intimacy-style', get_stylesheet_directory_uri()."/scss/style.css" );
-	wp_enqueue_script( 'intimacy-script', get_template_directory_uri() . "/js/script.js");
+	wp_enqueue_style( 'intimacy-style', get_stylesheet_directory_uri() . "/scss/style.css" );
+	wp_enqueue_script( 'intimacy-script', get_template_directory_uri() . "/js/script.js", null, null, true);// load script after page rendering
 	wp_deregister_script( 'wp-embed' );
 }
 add_action('wp_enqueue_scripts', 'intimacy_scripts');

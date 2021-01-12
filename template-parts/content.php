@@ -3,7 +3,7 @@
  * The template part for displaying content
  */
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('content-card'); ?>>
 	<div class="post-cover-inner">
 		<div class="post-cover-mask">
 			<header class="entry-header">
@@ -11,7 +11,7 @@
 					<span class="sticky-post">置顶文章↑</span>
 				<?php endif; ?>
 
-				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+				<?php the_title( sprintf( '<h2 class="entry-title"><a class="main-link" href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 			</header><!-- .entry-header -->
 
 				
