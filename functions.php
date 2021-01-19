@@ -10,6 +10,13 @@ if ( ! function_exists( 'intimacy_setup' ) ) :
 endif;
 add_action('after_setup_theme', 'intimacy_setup' );
 
+function featured_image_url(){
+	$thumb_id = get_post_thumbnail_id();
+	$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size');
+	$thumb_url = $thumb_url_array[0];
+	return $thumb_url;
+}
+
 
 // register a widget area
 function intimacy_widgets_init() {

@@ -51,7 +51,7 @@ header {
 }
 
 .content-card {
-  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   padding: 20px 0 40px;
 }
 
@@ -76,7 +76,6 @@ header {
   -webkit-filter: blur(8px) brightness(0.68);
   clip-path: polygon(2% 2%, 98% 2%, 98% 98%, 2% 98%);
   -webkit-clip-path: polygon(2% 2%, 98% 2%, 98% 98%, 2% 98%);
-  background-image: url(http://localhost/wordpress/wp-content/uploads/2020/11/DZcYqrrUQAApgUo.jpg);
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.5);
 }

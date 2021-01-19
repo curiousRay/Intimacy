@@ -1,5 +1,5 @@
 .content-card {
-  border-top: 1px solid rgba(0,0,0,.04);
+  border-bottom: 1px solid rgba(0,0,0,.04);
   padding: 20px 0 40px;
 }
 
@@ -28,7 +28,7 @@
   -webkit-filter: blur($blur-radius) brightness($brightness);
   clip-path: $clip-path;
   -webkit-clip-path: $clip-path;
-  background-image: url(http://localhost/wordpress/wp-content/uploads/2020/11/DZcYqrrUQAApgUo.jpg);
+  // background-image: url();
   background-size: cover;
   background-color: rgba(255,255,255,0.5);
 }
