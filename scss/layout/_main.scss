@@ -9,6 +9,7 @@
   @include pc {
     margin-left: 1em;
     margin-right: 1em;
+    padding: 0 10% 0 2%;
   }
 
   @include tablet {
@@ -49,13 +50,13 @@
 
   @include pc {
     width: 50%;
-    margin-left: 1.5em;
+    margin-left: 5%;
     margin-right: 0px;
   }
 
   @include tablet {
-    width: 35.3%;
-    margin-left: 1.5em;
+    width: 50%;
+    margin-left: 5%;
     margin-right: 0px;
   }
 

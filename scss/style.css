@@ -63,7 +63,7 @@ header {
 .post-cover {
   display: block;
   cursor: pointer;
-  padding: 120px 40px 40px;
+  padding: 60px 40px 40px 40px;
 }
 
 .post-cover-mask {
@@ -94,6 +94,7 @@ header {
   .site-main {
     margin-left: 1em;
     margin-right: 1em;
+    padding: 0 10% 0 2%;
   }
 }
 
@@ -144,15 +145,15 @@ header {
 @media screen and (min-width: 1023px) {
   .site-header {
     width: 50%;
-    margin-left: 1.5em;
+    margin-left: 5%;
     margin-right: 0px;
   }
 }
 
 @media screen and (min-width: 760px) and (max-width: 1023px) {
   .site-header {
-    width: 35.3%;
-    margin-left: 1.5em;
+    width: 50%;
+    margin-left: 5%;
     margin-right: 0px;
   }
 }
