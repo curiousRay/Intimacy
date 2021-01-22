@@ -1,15 +1,11 @@
 .content-card {
   border-bottom: 1px solid rgba(0,0,0,.04);
-  padding: 20px 0 40px;
+  padding: 20px 0 20px;
 }
 
 .post-cover {
   display: block;
   position: relative;
-}
-
-.post-cover {
-  display: block;
   cursor: pointer;
   padding: 60px 40px 40px 40px;  
 }
@@ -17,7 +13,7 @@
 .post-cover-mask {
   // clip-path 用于裁剪掉blur()产生的四周的白边
   $clip-path: polygon(2% 2%, 98% 2%, 98% 98%, 2% 98%);
-  $blur-radius: 8px;
+  $blur-radius: 6px;
   $brightness: 0.68;
   position: absolute;
   top: 0;
@@ -36,4 +32,12 @@
 .post-cover-inner {
   position: relative;
   color: white;
+}
+
+.post-text {
+  // background-color: red;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 2% 10px 2%;
 }

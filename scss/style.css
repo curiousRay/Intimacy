@@ -52,16 +52,12 @@ header {
 
 .content-card {
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-  padding: 20px 0 40px;
+  padding: 20px 0 20px;
 }
 
 .post-cover {
   display: block;
   position: relative;
-}
-
-.post-cover {
-  display: block;
   cursor: pointer;
   padding: 60px 40px 40px 40px;
 }
@@ -72,8 +68,8 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  filter: blur(8px) brightness(0.68);
-  -webkit-filter: blur(8px) brightness(0.68);
+  filter: blur(6px) brightness(0.68);
+  -webkit-filter: blur(6px) brightness(0.68);
   clip-path: polygon(2% 2%, 98% 2%, 98% 98%, 2% 98%);
   -webkit-clip-path: polygon(2% 2%, 98% 2%, 98% 98%, 2% 98%);
   background-size: cover;
@@ -83,6 +79,13 @@ header {
 .post-cover-inner {
   position: relative;
   color: white;
+}
+
+.post-text {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 2% 10px 2%;
 }
 
 .container {
