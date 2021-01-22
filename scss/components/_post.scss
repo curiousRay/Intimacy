@@ -1,6 +1,15 @@
 .content-card {
   border-bottom: 1px solid rgba(0,0,0,.04);
-  padding: 20px 0 20px;
+  padding: 20px 20% 20px 5%;
+
+  @include tablet {
+    padding: 20px 0 20px;
+
+  }
+  
+  @include phone {
+    padding: 20px 0 20px;
+  }
 }
 
 .post-cover {

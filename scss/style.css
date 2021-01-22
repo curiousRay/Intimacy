@@ -52,7 +52,19 @@ header {
 
 .content-card {
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-  padding: 20px 0 20px;
+  padding: 20px 20% 20px 5%;
+}
+
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .content-card {
+    padding: 20px 0 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .content-card {
+    padding: 20px 0 20px;
+  }
 }
 
 .post-cover {
@@ -145,7 +157,7 @@ header {
 
 @media screen and (min-width: 1023px) {
   .site-header {
-    width: 50%;
+    width: 45%;
     margin-left: 5%;
     margin-right: 0px;
   }
