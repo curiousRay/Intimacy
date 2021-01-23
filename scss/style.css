@@ -30,75 +30,6 @@ header {
   font-weight: bold;
 }
 
-.content-single-card {
-  position: relative;
-  z-index: 10;
-  background: #fff;
-  box-shadow: 8px 8px rgba(0, 0, 0, 0.15);
-  padding: 1.618em 3.236em;
-}
-
-@media screen and (min-width: 1023px) {
-  .content-single-card {
-    border-left: 10px solid #eee;
-  }
-}
-
-@media screen and (min-width: 760px) and (max-width: 1023px) {
-  .content-single-card {
-    border-left: 10px solid #eee;
-  }
-}
-
-.content-card {
-  padding: 20px 20% 20px 5%;
-}
-
-@media screen and (min-width: 760px) and (max-width: 1023px) {
-  .content-card {
-    padding: 20px 0 20px;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .content-card {
-    padding: 20px 0 20px;
-  }
-}
-
-.post-cover {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  padding: 60px 40px 40px 40px;
-}
-
-.post-cover-mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  filter: blur(6px) brightness(0.68);
-  -webkit-filter: blur(6px) brightness(0.68);
-  clip-path: polygon(2% 2%, 98% 2%, 98% 98%, 2% 98%);
-  -webkit-clip-path: polygon(2% 2%, 98% 2%, 98% 98%, 2% 98%);
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.post-cover-inner {
-  position: relative;
-  color: white;
-}
-
-.post-text {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  padding: 10px 2% 10px 2%;
-}
-
 .container {
   margin: 1.5em auto 0 auto;
 }
@@ -232,6 +163,75 @@ header {
 
 #comment-right {
   flex: 0.618;
+}
+
+.content-single-card {
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.15);
+  padding: 1.618em 3.236em;
+}
+
+@media screen and (min-width: 1023px) {
+  .content-single-card {
+    border-left: 10px solid #eee;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .content-single-card {
+    border-left: 10px solid #eee;
+  }
+}
+
+.content-card {
+  padding: 20px 20% 20px 5%;
+}
+
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .content-card {
+    padding: 20px 0 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .content-card {
+    padding: 20px 0 20px;
+  }
+}
+
+.post-cover {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 60px 40px 40px 40px;
+}
+
+.post-cover-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(6px) brightness(0.68);
+  -webkit-filter: blur(6px) brightness(0.68);
+  clip-path: polygon(2% 2%, 98% 2%, 98% 98%, 2% 98%);
+  -webkit-clip-path: polygon(2% 2%, 98% 2%, 98% 98%, 2% 98%);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.post-cover-inner {
+  position: relative;
+  color: white;
+}
+
+.post-text {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 2% 10px 2%;
 }
 
 body {
