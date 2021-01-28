@@ -1,3 +1,14 @@
+// Gets a value from a map.
+	@function val($map, $keys...) {
+		@if nth($keys, 1) == null {
+			$keys: remove-nth($keys, 1);
+		}
+		@each $key in $keys {
+			$map: map-get($map, $key);
+		}
+		@return $map;
+	}
+
 @function _font($keys...) {
 	@return val($font, $keys...);
 }
