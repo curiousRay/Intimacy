@@ -216,8 +216,7 @@ header {
 
 @media screen and (min-width: 1023px) {
   .site-main {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 4em;
   }
 }
 
@@ -366,7 +365,8 @@ header {
 }
 
 .content-card {
-  padding: 20px 20% 20px 5%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 20px 20% 20px 0;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1023px) {
