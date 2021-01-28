@@ -66,9 +66,9 @@ if (get_post_thumbnail_id()) { ?>
 						?>
 				</div><!-- .entry-content -->
 
-				
 			</div>
 	</div>
+
 
 <?php } else { ?>
 
@@ -133,8 +133,12 @@ if (get_post_thumbnail_id()) { ?>
 
 						?>
 				</div><!-- .entry-content -->
+				<!-- the seperate line for text-only card -->
+				<div class="seperation"></div>
 	</div>
 <?php } ?>
 	
+
+
 </article><!-- #post-<?php the_ID(); ?> -->
 

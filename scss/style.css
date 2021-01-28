@@ -365,7 +365,6 @@ header {
 }
 
 .content-card {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   padding: 20px 20% 20px 0;
 }
 
@@ -407,11 +406,20 @@ header {
   color: white;
 }
 
+.entry-title {
+  margin-top: .83em;
+  margin-bottom: .83em;
+}
+
 .post-text {
   display: block;
   position: relative;
   cursor: pointer;
   padding: 10px 2% 10px 2%;
+}
+
+.seperation {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 body {

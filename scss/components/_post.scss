@@ -1,5 +1,5 @@
 .content-card {
-  border-bottom: 1px solid rgba(0,0,0,.04);
+  // border-bottom: 1px solid rgba(0,0,0,.04);
   // padding: 20px 20% 20px 5%;
   padding: 20px 20% 20px 0;
 
@@ -44,10 +44,19 @@
   color: white;
 }
 
+.entry-title {
+  margin-top: .83em;
+  margin-bottom: .83em;
+}
+
 .post-text {
   // background-color: red;
   display: block;
   position: relative;
   cursor: pointer;
   padding: 10px 2% 10px 2%;
+}
+
+.seperation {
+  border-bottom: 1px solid rgba(0,0,0,.04);
 }
