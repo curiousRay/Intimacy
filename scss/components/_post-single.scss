@@ -3,14 +3,18 @@
   z-index: 10;
   background: #fff;
   box-shadow: 8px 8px rgba($color: #000, $alpha: .15);
+  margin-left: 4em;
+  margin-right: 4em;
   padding: 1.618em 3.236em;
+  border-left: 10px solid #eee;
+
   
   @include pc {
-    border-left: 10px solid #eee;
+    // border-left: 10px solid #eee;
+    // margin-left: 4em;
   }
   
   @include tablet {
-    border-left: 10px solid #eee;
   }
 
 }
