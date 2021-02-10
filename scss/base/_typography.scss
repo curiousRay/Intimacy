@@ -1,0 +1,50 @@
+
+body {
+  font-family: $base-font-family;
+  font-weight: normal;
+  color: $text-color;
+}
+
+.entry-content {
+  h1,h2,h3,h4,h5,h6, legend {
+    margin-top: 0;
+    font-weight: 700; // 700 or 400
+    font-family: $custom-font-family;
+  }
+
+  h1 { font-size: 175%; }
+  h2 { font-size: 150%; }
+  h3 { font-size: 125%; }
+  h4 { font-size: 115%; }
+  h5 { font-size: 110%; }
+  h6 { font-size: 100%; }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $table-border-color;
+    margin: $base-line-height 0;
+    padding: 0;
+  }
+  p {
+    line-height: $base-line-height;
+    margin: 0;
+    font-size: $base-font-size;
+    margin-bottom: $base-line-height;
+  }
+
+  code {
+    white-space: nowrap;
+    max-width: 100%;
+    background: white;
+    border: solid 1px hsl(195,7%,89%);
+    font-size: 90%;
+    padding: 2px 5px;
+    font-family: $code-font-family;
+    color: #E74C3C;
+    overflow-x: auto;
+  }
+
+}
+

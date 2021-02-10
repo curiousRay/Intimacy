@@ -7,26 +7,26 @@ $large: 1023px;
 
 // pc
 
-$size: (
-		border-radius:		0.375em,
-		element-height:		2.75em,
-		element-margin:		2em,
-		sidebar-width:		26em,
-		sidebar-width-alt:	24em,
-		gutter:				3em
-  );
-  
-$font: (
-  family:				('Open Sans', sans-serif),
-  family-heading:		('Roboto Slab', serif),
-  family-fixed:		('Courier New', monospace),
-  weight:				400,
-  weight-bold:		600,
-  weight-heading:		700,
-  weight-heading-alt:	400,
-  kerning-heading:	0.075em
-);
 
+$base-font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+$custom-font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+$custom-font-family2: Georgia, serif;
+$code-font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+
+	$base-font-size:                      16px !default;
+	$base-line-height:                    24px !default;
+	$icon-font-family:                    "FontAwesome";
+	$text-color:                          hsl(0,0%,25%) !default;
+	$text-invert:                         hsl(0,0%,100%) !default;
+	$text-code-border-color:              hsl(195,7%,89%);
+
+	$table-background-color:              transparent;
+	$table-border-color:                  hsl(195, 7%, 89%);
+	$table-stripe-color:                  hsl(185,15%,96%);
+	$table-bg-hover-color:                hsl(0,0%,85%);
+	$table-head-background-color:         $table-border-color;
+	$table-font-size:                     90%;
+	$table-padding-size:                  $base-font-size / 2 $base-font-size;
 $palette: (
 		bg:					#ffffff,
 		bg-alt:				#f5f6f7,

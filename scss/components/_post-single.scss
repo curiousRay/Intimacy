@@ -8,7 +8,13 @@
   padding: 1.618em 3.236em;
   border-left: 10px solid #eee;
 
-  
+  .entry-title {
+    margin: .83em 0;
+    font-weight: 700; // 700 or 400
+    font-size: 175%;
+    font-family: $custom-font-family;
+  }
+
   @include pc {
     // border-left: 10px solid #eee;
     // margin-left: 4em;
@@ -18,3 +24,4 @@
   }
 
 }
+

@@ -57,6 +57,70 @@ Theme Intimacy styling entrance
   src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url(../fonts/RobotoSlab-Bold.ttf) format("truetype");
 }
 
+body {
+  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+  color: #404040;
+}
+
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-content legend {
+  margin-top: 0;
+  font-weight: 700;
+  font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+}
+
+.entry-content h1 {
+  font-size: 175%;
+}
+
+.entry-content h2 {
+  font-size: 150%;
+}
+
+.entry-content h3 {
+  font-size: 125%;
+}
+
+.entry-content h4 {
+  font-size: 115%;
+}
+
+.entry-content h5 {
+  font-size: 110%;
+}
+
+.entry-content h6 {
+  font-size: 100%;
+}
+
+.entry-content hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e1e4e5;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.entry-content p {
+  line-height: 24px;
+  margin: 0;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.entry-content code {
+  white-space: nowrap;
+  max-width: 100%;
+  background: white;
+  border: solid 1px #e1e4e5;
+  font-size: 90%;
+  padding: 2px 5px;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+  color: #E74C3C;
+  overflow-x: auto;
+}
+
 header {
   position: relative;
 }
@@ -142,7 +206,7 @@ header {
 
 @media screen and (min-width: 1023px) {
   .site-header {
-    width: 45%;
+    width: 38%;
     margin-left: 5%;
     margin-right: 0px;
   }
@@ -192,7 +256,7 @@ header {
 }
 
 #respond {
-  background-color: white;
+  background-color: pink;
 }
 
 .comment-form {
@@ -231,6 +295,13 @@ header {
   margin-right: 4em;
   padding: 1.618em 3.236em;
   border-left: 10px solid #eee;
+}
+
+.content-single-card .entry-title {
+  margin: .83em 0;
+  font-weight: 700;
+  font-size: 175%;
+  font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 
 .content-card {
