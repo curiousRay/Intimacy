@@ -2,59 +2,45 @@
 Theme Intimacy styling entrance
 */
 @font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Inconsolata"), local("Inconsolata-Regular"), url(../fonts/Inconsolata-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Inconsolata Bold"), local("Inconsolata-Bold"), url(../fonts/Inconsolata-Bold.ttf) format("truetype");
-}
-
-@font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"), url(../fonts/Lato-Regular.ttf) format("truetype");
+  src: local("Lato Regular"), local("Lato-Regular"), url(../fonts/Lato/Lato-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local("Lato Bold"), local("Lato-Bold"), url(../fonts/Lato-Bold.ttf) format("truetype");
+  src: local("Lato Bold"), local("Lato-Bold"), url(../fonts/Lato/Lato-Bold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local("Lato Italic"), local("Lato-Italic"), url(../fonts/Lato-Italic.ttf) format("truetype");
+  src: local("Lato Italic"), local("Lato-Italic"), url(../fonts/Lato/Lato-Italic.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
-  src: local("Lato Bold Italic"), local("Lato-BoldItalic"), url(../fonts/Lato-BoldItalic.ttf) format("truetype");
+  src: local("Lato Bold Italic"), local("Lato-BoldItalic"), url(../fonts/Lato/Lato-BoldItalic.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url(../fonts/RobotoSlab-Regular.ttf) format("truetype");
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url(../fonts/RobotoSlab/roboto-slab-v7-regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 700;
-  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url(../fonts/RobotoSlab-Bold.ttf) format("truetype");
+  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url(../fonts/RobotoSlab/roboto-slab-v7-bold.ttf) format("truetype");
 }
 
 body {
@@ -119,6 +105,21 @@ body {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
   color: #E74C3C;
   overflow-x: auto;
+}
+
+.entry-content sub, .entry-content sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.entry-content sup {
+  top: -0.5em;
+}
+
+.entry-content sub {
+  bottom: -0.25em;
 }
 
 header {
