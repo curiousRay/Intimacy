@@ -66,5 +66,50 @@ body {
       color: #3091D1;
     }
   }
+
+  figcaption {
+    font-style: italic;
+    line-height: 1;
+  }
+
+  .wp-block-table {
+    margin: 0;
+    @include pc {
+      width: 40em;
+    }
+  }
+
+  table {
+    border: 1px solid #e1e4e5;
+    white-space: nowrap;
+    border-spacing: 0;
+
+    +figcaption {
+      margin: 1em 0;
+    }
+
+    thead {
+      color: #000;
+      text-align: left;
+      // vertical-align: bottom;
+      // white-space: nowrap;
+    }
+
+    th, td {
+      padding: 8px 16px;
+      border-bottom: 1px solid #e1e4e5;
+      border-left: 1px solid #e1e4e5;
+      vertical-align: middle;
+      &:first-child {
+        border-left-width: 0;
+      }
+    }
+    
+    tr {
+      &:last-child td {
+        border-bottom-width: 0;
+      }
+    }
+  }
 }
 

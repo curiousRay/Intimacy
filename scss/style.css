@@ -136,6 +136,51 @@ body {
   color: #3091D1;
 }
 
+.entry-content figcaption {
+  font-style: italic;
+  line-height: 1;
+}
+
+.entry-content .wp-block-table {
+  margin: 0;
+}
+
+@media screen and (min-width: 1023px) {
+  .entry-content .wp-block-table {
+    width: 40em;
+  }
+}
+
+.entry-content table {
+  border: 1px solid #e1e4e5;
+  white-space: nowrap;
+  border-spacing: 0;
+}
+
+.entry-content table + figcaption {
+  margin: 1em 0;
+}
+
+.entry-content table thead {
+  color: #000;
+  text-align: left;
+}
+
+.entry-content table th, .entry-content table td {
+  padding: 8px 16px;
+  border-bottom: 1px solid #e1e4e5;
+  border-left: 1px solid #e1e4e5;
+  vertical-align: middle;
+}
+
+.entry-content table th:first-child, .entry-content table td:first-child {
+  border-left-width: 0;
+}
+
+.entry-content table tr:last-child td {
+  border-bottom-width: 0;
+}
+
 header {
   position: relative;
 }
@@ -190,7 +235,7 @@ header {
 
 @media screen and (min-width: 1023px) {
   .extended {
-    max-width: 1240px;
+    max-width: 1300px;
   }
 }
 
@@ -304,7 +349,7 @@ header {
 .content-single-card {
   position: relative;
   z-index: 10;
-  background: #fff;
+  background: #fcfcfc;
   box-shadow: 8px 8px rgba(0, 0, 0, 0.15);
   margin-left: 4em;
   margin-right: 4em;
