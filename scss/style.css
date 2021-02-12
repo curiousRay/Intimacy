@@ -122,6 +122,20 @@ body {
   bottom: -0.25em;
 }
 
+.entry-content a {
+  color: #2980B9;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.entry-content a:active, .entry-content a:hover {
+  outline: 0;
+}
+
+.entry-content a:hover {
+  color: #3091D1;
+}
+
 header {
   position: relative;
 }
