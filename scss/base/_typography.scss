@@ -27,7 +27,7 @@ body {
     margin: $base-line-height 0;
     padding: 0;
   }
-  p {
+  p, th {
     line-height: $base-line-height;
     margin: 0;
     font-size: $base-font-size;
@@ -109,6 +109,15 @@ body {
       &:last-child td {
         border-bottom-width: 0;
       }
+    }
+  }
+
+  blockquote {
+    border: groove;
+    padding: 1em;
+
+    cite {
+      color: #888;
     }
   }
 }

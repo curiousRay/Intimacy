@@ -88,7 +88,7 @@ body {
   padding: 0;
 }
 
-.entry-content p {
+.entry-content p, .entry-content th {
   line-height: 24px;
   margin: 0;
   font-size: 16px;
@@ -179,6 +179,15 @@ body {
 
 .entry-content table tr:last-child td {
   border-bottom-width: 0;
+}
+
+.entry-content blockquote {
+  border: groove;
+  padding: 1em;
+}
+
+.entry-content blockquote cite {
+  color: #888;
 }
 
 header {

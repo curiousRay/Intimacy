@@ -123,15 +123,18 @@ if (get_post_thumbnail_id()) { ?>
 					
 				<div class="entry-content">
 					<?php
-						the_content(""
-							// sprintf(
-							// 	/* translators: %s: Post title. */
-							// 	__( 'Continue reading<span> "%s"</span>', 'intimacy' ),
-							// 	get_the_title()
-							// )
-						);
-
-						?>
+						if($post -> post_excerpt) {
+							the_excerpt();
+						} else {
+							the_content(""
+								// sprintf(
+								// 	/* translators: %s: Post title. */
+								// 	__( 'Continue reading<span> "%s"</span>', 'intimacy' ),
+								// 	get_the_title()
+								// )
+							);
+						}
+					?>
 				</div><!-- .entry-content -->
 				<!-- the seperate line for text-only card -->
 				<div class="seperation"></div>
