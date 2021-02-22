@@ -1,61 +1,115 @@
 // comment list
 
 .comments-area {
-  background-color: white;
-  padding: 1.618em 3.236em;
+  background-color: white; // theme color
+  padding: 1.618em 0 0 3.236em;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-left: 4em;
   margin-right: 4em;
-}
 
-.comment-list, .children {
-  list-style: none;
-}
-
-// comment form
-#submit {
-  
-  &:hover {
-    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-    background-color:#5cbf2a; 
-    }
-  &:focus {
-      outline-color: yellow;
-     //  change border color from black to else, can be 'none', also useable for textform etc.
-     }
-  &:active { 
-   position:relative;
-   top:1px;
+  .comment-list, .children {
+    list-style: none;
   }
-}
 
-#respond {
-  background-color:pink;
-}
+  // comment form
+  #comment-left {
+    flex: 0.382;
+    margin-right: 2em;
 
-.comment-form {
-  display: flex;
-}
+    .comment-short-underline {
+      border-bottom: solid #ff8600 2px;
+      width: 16%;
+    }
+
+    .comment-form-author, .comment-form-email {
+      label { color: #d3d4d5; }
+      .required { display: none; }
+      input {
+        border: 0;
+        outline-style: none;
+        border-bottom: solid 1px #d3d4d5;
+        /* margin: 0.5em 0; */
+        padding: 7px 0;
+        font-size: 15px;
+      }
+    }
+
+    .comment-form-cookies-consent {
+      input {
+        margin-left: 0;
+      }
+
+      label {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  #comment-right {
+    flex: 0.618;
+    // padding-left: 1em;
+
+    .comment-form-comment {
+      border-left: solid 1px #d3d4d5;
+      label {
+        margin: 1em 0;
+        padding-left: 1em;
+        color: #d3d4d5;
+      }
+
+      textarea {
+        resize: none;
+        padding-left: 1.2em;
+        border: none;
+        outline: none;
+        font-family: $base-font-family;
+        font-size: inherit;
+      }
+    }
+    
+    .form-submit {
+      display: flex;
+      flex-direction: column;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      #submit {
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+        border: 0;
+        height: 3em;
+        background-color: #2a2b35; 
+        color: white;
+        &:active {
+          background-color: grey;
+        }
+        &:hover {
+        }
+        &:focus {
+          //  change border color from black to else, can be 'none', also useable for textform etc.
+        }
+      }
+    }
+  }
+
+  .comment-form {
+    display: flex;
+  }
+    
+  .comment-form-comment {
+    height: 16em;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+    
+
+
   
-.comment-form-comment {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-  
-.form-submit {
-  display: flex;
-  flex-direction: column;
-  margin-block-start: 0;
-  margin-block-end: 0;
 }
 
-#comment-left {
-  flex: 0.382;
-}
-#comment-right {
-  flex: 0.618;
-}
+
+

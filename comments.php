@@ -97,7 +97,7 @@ if ( post_password_required() ) {
     $commenter = wp_get_current_commenter();
     $req = get_option( 'require_name_email' );
     $aria_req = ( $req ? " aria-required='true'" : '' );
-    $title_reply = '<h2 id="reply-title" class="comment-reply-title">Write me</h2>';
+    $title_reply = '<h2 id="reply-title" class="comment-reply-title">Write me</h2><div class="comment-short-underline"></div>';
     $fields =  array('author' => $title_reply
       .'<p class="comment-form-author">'
       . '<label for="author">' . __( 'Name' ) . '</label> '
@@ -119,7 +119,7 @@ if ( post_password_required() ) {
     .$consent
     .' />'
     .'<label for="wp-comment-cookies-consent">'
-    .__('Remember me for the next time I comment', 'textdomain')
+    .__('Remember me', 'textdomain')
     .'</label></p>';
 
     $comments_args = array(
