@@ -190,6 +190,10 @@ body {
   color: #888;
 }
 
+.entry-content blockquote p {
+  margin-bottom: 0;
+}
+
 header {
   position: relative;
 }
