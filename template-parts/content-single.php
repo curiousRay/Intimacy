@@ -7,15 +7,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('content-single-card'); ?>>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-      the_content();
-    ?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
+	<p class="entry-footer">
 		<?php 
 		
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
@@ -49,8 +41,16 @@
 				'</span>'
 			);
 			?>
-	</footer><!-- .entry-footer -->
+	</p><!-- .entry-footer -->
+	</header><!-- .entry-header -->
 
-	<hr/>
+	<div class="entry-content">
+		<?php
+      the_content();
+    ?>
+	</div><!-- .entry-content -->
+
+	<div class="hr-eod"></div>
+	<div class="text-eod">End of document</div>
 
 </article><!-- #post-<?php the_ID(); ?> -->

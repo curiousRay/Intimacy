@@ -10,6 +10,12 @@ if ( ! function_exists( 'intimacy_setup' ) ) :
 endif;
 add_action('after_setup_theme', 'intimacy_setup' );
 
+// add 2nd line to TinyMCE editor toolbar
+// add_filter('tiny_mce_before_init', function(){
+// 	$args['wordpress_adv_hidden'] = true;
+//   return $args;
+// });
+
 function featured_image_url(){
 	$thumb_id = get_post_thumbnail_id();
 	$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size');
