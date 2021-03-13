@@ -359,6 +359,41 @@ header {
 
 .comments-area .comment-list, .comments-area .children {
   list-style: none;
+  padding-right: 3.236em;
+}
+
+.comments-area .comment-list .vcard {
+  display: flex;
+}
+
+.comments-area .comment-list .comment-author, .comments-area .comment-list .comment-datetime {
+  flex-direction: column;
+}
+
+.comments-area .comment-list .comment-author {
+  margin-left: 5px;
+}
+
+.comments-area .comment-list .comment-author cite {
+  font-size: 1em;
+}
+
+.comments-area .comment-list .comment-author .comment-datetime {
+  font-size: 0.9em;
+}
+
+.comments-area .comment-list p {
+  margin: 0.3em 0;
+}
+
+.comments-area .comment-list .comment {
+  padding-left: 5px;
+  margin: 0.5em 0;
+  border-left: 5px solid #eee;
+}
+
+.comments-area .comment-list .reply {
+  font-size: 0.9em;
 }
 
 .comments-area .comment-long-underline {
