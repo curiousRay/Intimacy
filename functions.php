@@ -47,6 +47,7 @@ add_action( 'widgets_init', 'intimacy_widgets_init' );
 function intimacy_menus_init() {
 		register_nav_menus(array(
 			'primary' => __('Primary Menu'),
+			'bottom' => __('Bottom Menu'),
 	));
 }
 add_action('init', 'intimacy_menus_init');

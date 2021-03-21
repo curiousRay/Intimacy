@@ -49,6 +49,14 @@ body {
   color: #404040;
 }
 
+body a {
+  text-decoration: none;
+}
+
+body a:visited {
+  color: inherit;
+}
+
 article .hr-eod {
   display: block;
   height: 1px;
@@ -343,8 +351,26 @@ header {
   background-color: yellow;
 }
 
-.sidebar {
-  background-color: goldenrod;
+.site-footer {
+  padding: 10px 20px;
+  background-color: lightpink;
+}
+
+.site-footer .copyr {
+  color: black;
+  text-decoration: none !important;
+}
+
+.site-footer .site-nav {
+  float: right;
+}
+
+.site-footer .site-nav .m-class {
+  display: flex;
+}
+
+.site-footer .site-nav .m-class li {
+  flex-direction: column;
 }
 
 .comments-area {
@@ -389,7 +415,6 @@ header {
 .comments-area .comment-list .comment {
   padding-left: 5px;
   margin: 0.5em 0;
-  border-left: 5px solid #eee;
 }
 
 .comments-area .comment-list .reply {
