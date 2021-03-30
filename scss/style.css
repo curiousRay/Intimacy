@@ -323,6 +323,12 @@ header {
   flex-direction: row;
 }
 
+@media screen and (max-width: 760px) {
+  .flex {
+    display: block;
+  }
+}
+
 .full-width {
   width: 100%;
 }
@@ -351,6 +357,22 @@ header {
   background-color: yellow;
 }
 
+.site-banner .site-nav .drawer-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .site-banner .site-nav .drawer-toggle {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .sidebar {
+    display: none;
+  }
+}
+
 .site-footer {
   padding: 10px 20px;
   background-color: lightpink;
@@ -371,6 +393,9 @@ header {
 
 .site-footer .site-nav .m-class li {
   flex-direction: column;
+  list-style-type: none;
+  margin-left: 20px;
+  color: #484848;
 }
 
 .comments-area {

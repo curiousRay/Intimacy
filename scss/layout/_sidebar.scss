@@ -1,0 +1,40 @@
+.site-header {
+  margin-top: 0px;
+
+  @include pc {
+    width: 38%;
+    margin-left: 5%;
+    margin-right: 0px;
+  }
+
+  @include tablet {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 0px;
+  }
+
+  // @include phone {
+  //   padding-top: 4em;
+  //   background-color: lightcoral;
+  // }
+}
+.site-banner {
+  background-color: yellow;
+
+  .site-nav {
+    .drawer-toggle {
+      display: none;
+      @include phone {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.sidebar {
+  @include phone {
+    display: none;
+  }
+  // background-color: goldenrod;
+}
+

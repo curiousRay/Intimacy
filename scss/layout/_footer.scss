@@ -11,6 +11,9 @@
       display: flex;
       li {
         flex-direction: column;
+        list-style-type: none;
+        margin-left: 20px;
+        color: #484848;
       }
     }
   }

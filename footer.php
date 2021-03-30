@@ -12,8 +12,9 @@
 						<span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>&nbsp; </a></span>
 					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'intimacy' ) ); ?>">
 					</a>
-					<span class="copyr"><a href="http://baidu.com"><?php printf(__( 'CC BY-NC-SA', 'intimacy' )); ?>
-				</a></span>
+					<span class="copyr"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+						<?php printf(__( 'CC BY-NC-SA', 'intimacy' )); ?>
+					</a></span>
 					<?php
 						printf( __( '&nbsp; theme Intimacy', 'intimacy' ));
 					 ?>

@@ -12,11 +12,15 @@ console.log('hello');
 
 //   function handleClick(event) {
 //     const noTextSelected = !window.getSelection().toString();
-
 //     if (noTextSelected) {
 //       mainLink.click();
 //     }
 //   }
-  
+
 //   card.addEventListener("click", handleClick);
 // });
+
+function toggleDrawer() {
+  var toggle = document.getElementById("mSidebar");
+  console.log(toggle);
+}
