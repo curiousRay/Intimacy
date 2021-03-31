@@ -7,6 +7,9 @@
   }
   .site-nav {
     float: right;
+    @include phone {
+      float: left; //TODO: reconstruct using flex
+    }
     .m-class {
       display: flex;
       li {

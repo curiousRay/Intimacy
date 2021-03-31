@@ -25,8 +25,8 @@ console.log('hello');
 function toggleDrawer() {
   if (!($(".drawer-toggle").hasClass("menu-expand"))) {
     $(".drawer-toggle").addClass("menu-expand");
-    $("#mSidebar").css("display", "block");
     // actions when menu is toggled on
+    $("#mSidebar").css("display", "block");
   } else {
     $(".drawer-toggle").removeClass("menu-expand");
     // actions when menu is toggled off

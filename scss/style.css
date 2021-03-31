@@ -391,6 +391,12 @@ header {
   float: right;
 }
 
+@media screen and (max-width: 760px) {
+  .site-footer .site-nav {
+    float: left;
+  }
+}
+
 .site-footer .site-nav .m-class {
   display: flex;
 }
