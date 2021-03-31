@@ -28,6 +28,10 @@
         display: inline-block;
       }
     }
+    .menu-expand {
+      // append these styles on menu button when it is clicked
+      background-color: red;
+    }
   }
 }
 

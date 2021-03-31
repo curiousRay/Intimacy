@@ -1,3 +1,5 @@
+(function (jQuery) {window.$ = jQuery.noConflict();})(jQuery);
+
 console.log('hello');
 
 // const cards = document.querySelectorAll(".content-card");
@@ -21,6 +23,14 @@ console.log('hello');
 // });
 
 function toggleDrawer() {
-  var toggle = document.getElementById("mSidebar");
-  console.log(toggle);
+  if (!($(".drawer-toggle").hasClass("menu-expand"))) {
+    $(".drawer-toggle").addClass("menu-expand");
+    $("#mSidebar").css("display", "block");
+    // actions when menu is toggled on
+  } else {
+    $(".drawer-toggle").removeClass("menu-expand");
+    // actions when menu is toggled off
+    $("#mSidebar").css("display", "none");
+
+  }
 }
