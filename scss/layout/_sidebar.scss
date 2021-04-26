@@ -20,8 +20,33 @@
 }
 .site-banner {
   background-color: yellow;
+  background-image: url("../img/seawave.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 15px;
 
   .site-nav {
+    #m-id {
+      display: flex;
+    }
+    #c-id {
+      display: flex;
+    }
+    .drawer-toggle, li {
+      list-style: none;
+      white-space: nowrap;
+      max-width: 100%;
+      background: white;
+      border: solid 1px #e1e4e5;
+      font-size: 90%;
+      padding: 2px 8px;
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+      color: #2980b9;
+      overflow-x: auto;
+      &:visited {
+        color: #2980b9;
+      }
+    }
     .drawer-toggle {
       display: none;
       @include phone {

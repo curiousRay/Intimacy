@@ -1,5 +1,8 @@
 .container {
-  margin: 1.5em auto 0 auto;
+  margin: 1.5em auto 1.5em auto;
+  @include phone {
+    margin: 0 1em;
+  }
 }
 
 .article-list {
@@ -10,8 +13,8 @@
   }
 
   @include tablet {
-    margin-left: .5em;
-    margin-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
   
   @include phone {
@@ -36,6 +39,7 @@
 .flex {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 
   @include phone {
     display: block; // unset flex layout on phones
@@ -44,4 +48,8 @@
 
 .full-width {
   width: 100%;
+}
+
+.two-thirds-width {
+  width: 68%;
 }

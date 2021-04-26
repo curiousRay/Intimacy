@@ -278,7 +278,13 @@ header {
 }
 
 .container {
-  margin: 1.5em auto 0 auto;
+  margin: 1.5em auto 1.5em auto;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    margin: 0 1em;
+  }
 }
 
 @media screen and (min-width: 1023px) {
@@ -289,8 +295,8 @@ header {
 
 @media screen and (min-width: 760px) and (max-width: 1023px) {
   .article-list {
-    margin-left: .5em;
-    margin-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 
@@ -321,6 +327,7 @@ header {
 .flex {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 760px) {
@@ -331,6 +338,10 @@ header {
 
 .full-width {
   width: 100%;
+}
+
+.two-thirds-width {
+  width: 68%;
 }
 
 .site-header {
@@ -355,6 +366,35 @@ header {
 
 .site-banner {
   background-color: yellow;
+  background-image: url("../img/seawave.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 15px;
+}
+
+.site-banner .site-nav #m-id {
+  display: flex;
+}
+
+.site-banner .site-nav #c-id {
+  display: flex;
+}
+
+.site-banner .site-nav .drawer-toggle, .site-banner .site-nav li {
+  list-style: none;
+  white-space: nowrap;
+  max-width: 100%;
+  background: white;
+  border: solid 1px #e1e4e5;
+  font-size: 90%;
+  padding: 2px 8px;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+  color: #2980b9;
+  overflow-x: auto;
+}
+
+.site-banner .site-nav .drawer-toggle:visited, .site-banner .site-nav li:visited {
+  color: #2980b9;
 }
 
 .site-banner .site-nav .drawer-toggle {
@@ -393,8 +433,12 @@ header {
 
 @media screen and (max-width: 760px) {
   .site-footer .site-nav {
-    float: left;
+    display: none;
   }
+}
+
+.site-footer .site-nav .c-class {
+  display: flex;
 }
 
 .site-footer .site-nav .m-class {
@@ -409,13 +453,12 @@ header {
 }
 
 .comments-area {
+  display: none;
   background-color: white;
   border: #2a2b35 2px solid;
   padding: 1.618em 0 0 3.236em;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-left: 4em;
-  margin-right: 4em;
 }
 
 .comments-area .comment-list, .comments-area .children {

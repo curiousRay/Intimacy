@@ -1,13 +1,14 @@
 // comment list
 
 .comments-area {
+  display: none;
   background-color: white; // theme color
   border: #2a2b35 2px solid;
   padding: 1.618em 0 0 3.236em;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-left: 4em;
-  margin-right: 4em;
+  // margin-left: 4em;
+  // margin-right: 4em;
 
   .comment-list, .children {
     list-style: none;

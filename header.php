@@ -36,11 +36,10 @@
 					'menu_id'   => 'm-id', 
 					'before' => '<span>',
 					'after'  => '</span>',
-					'link_before'  => '- ',  
-					'link_after'  => ' -',	
-					'items_wrap'  => '<div id="%1$s" class="items-wrap %2$s">%3$s</div>',
+					'link_before'  => '',  
+					'link_after'  => '',	
+					'items_wrap'  => '<button class="drawer-toggle" type="button" onclick="toggleDrawer()">Click Me!</button><div id="%1$s" class="items-wrap %2$s">%3$s</div>',
 					)); ?>
-				<button class="drawer-toggle" type="button" onclick="toggleDrawer()">Click Me!</button>
 				</nav><!-- .site-nav -->
 			</div><!-- .site-banner -->
 			<?php # if (is_active_sidebar( 'sidebar-1' ) ) : ?>

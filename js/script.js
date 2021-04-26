@@ -1,5 +1,4 @@
 (function (jQuery) {window.$ = jQuery.noConflict();})(jQuery);
-
 console.log('hello');
 
 // const cards = document.querySelectorAll(".content-card");
