@@ -270,20 +270,13 @@ header {
   }
 }
 
-.site-title {
-  font-size: 1.5em;
-  padding-block-start: .65em;
-  padding-block-end: .65em;
-  font-weight: bold;
-}
-
 .container {
   margin: 1.5em auto 1.5em auto;
 }
 
 @media screen and (max-width: 760px) {
   .container {
-    margin: 0 1em;
+    margin: 1.5em 1em;
   }
 }
 
@@ -327,7 +320,6 @@ header {
 .flex {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
 }
 
 @media screen and (max-width: 760px) {
@@ -364,12 +356,36 @@ header {
   }
 }
 
+@media screen and (max-width: 760px) {
+  .site-header {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
 .site-banner {
-  background-color: yellow;
+  background-color: #d9d9d9;
   background-image: url("../img/seawave.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   margin-bottom: 15px;
+}
+
+.site-banner .site-branding {
+  margin-left: 1em;
+}
+
+.site-banner .site-branding .site-title {
+  color: whitesmoke;
+  font-size: 1.5em;
+  padding-block-start: .65em;
+  padding-block-end: .65em;
+  font-weight: bold;
+}
+
+.site-banner .site-branding .site-description {
+  margin-top: 0;
+  color: #fcfcfc;
 }
 
 .site-banner .site-nav #m-id {
@@ -420,6 +436,12 @@ header {
 .site-footer {
   padding: 10px 20px;
   background-color: lightpink;
+}
+
+@media screen and (max-width: 760px) {
+  .site-footer {
+    padding: 5px 20px;
+  }
 }
 
 .site-footer .copyr {
@@ -618,6 +640,14 @@ header {
   font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 
+@media screen and (max-width: 760px) {
+  .content-single-card {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1.618em 1.618em;
+  }
+}
+
 .content-card {
   padding: 20px 20% 20px 0;
 }
@@ -678,10 +708,6 @@ header {
 
 body {
   margin: 0 0 0 0;
-}
-
-.site-description {
-  color: blue;
 }
 
 .bg-texture {

@@ -13,18 +13,37 @@
     margin-right: 0px;
   }
 
+  @include phone {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
   // @include phone {
   //   padding-top: 4em;
   //   background-color: lightcoral;
   // }
 }
 .site-banner {
-  background-color: yellow;
+  background-color: rgb(217, 217, 217);
   background-image: url("../img/seawave.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   margin-bottom: 15px;
-
+  
+  .site-branding {
+    margin-left: 1em;
+    .site-title {
+      color: whitesmoke;
+      font-size: 1.5em;
+      padding-block-start: .65em;
+      padding-block-end: .65em;
+      font-weight: bold;
+    }    
+    .site-description {
+      margin-top: 0;
+      color: #fcfcfc;
+    }
+  }
   .site-nav {
     #m-id {
       display: flex;

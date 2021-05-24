@@ -1,6 +1,9 @@
 .site-footer {
   padding: 10px 20px;
   background-color: lightpink;
+  @include phone {
+    padding: 5px 20px;
+  }
   .copyr {
     color: black;
     text-decoration: none !important;

@@ -24,5 +24,11 @@
   @include tablet {
   }
 
+  @include phone {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1.618em 1.618em;
+  }
+
 }
 
