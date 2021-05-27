@@ -600,6 +600,18 @@ header {
   display: flex;
 }
 
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .comments-area .comment-form {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .comments-area .comment-form {
+    display: block;
+  }
+}
+
 .comments-area .comment-form-comment {
   height: 16em;
   display: flex;

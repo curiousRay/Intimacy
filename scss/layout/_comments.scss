@@ -119,6 +119,8 @@
 
   .comment-form {
     display: flex;
+    @include tablet {display: block;}
+    @include phone {display: block;}
   }
     
   .comment-form-comment {
