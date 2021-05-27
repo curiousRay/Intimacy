@@ -65,6 +65,11 @@
       &:visited {
         color: #2980b9;
       }
+
+      &:hover {
+        background-color: #2980b9;
+        color: #fff;
+      }
     }
     .drawer-toggle {
       display: none;
@@ -74,12 +79,16 @@
     }
     .menu-expand {
       // append these styles on menu button when it is clicked
-      background-color: red;
+      background-color:#2980b9;
+      color: #fff;
     }
   }
 }
 
 .sidebar {
+  a {
+    &:link, &:visited {color: #404040;}
+  }
   @include phone {
     display: none;
   }

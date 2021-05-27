@@ -252,24 +252,6 @@ header {
   position: relative;
 }
 
-@media screen and (min-width: 1023px) {
-  header {
-    background-color: lightblue;
-  }
-}
-
-@media screen and (min-width: 760px) and (max-width: 1023px) {
-  header {
-    background-color: lightgreen;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  header {
-    background-color: lightcoral;
-  }
-}
-
 .container {
   margin: 1.5em auto 1.5em auto;
 }
@@ -413,6 +395,11 @@ header {
   color: #2980b9;
 }
 
+.site-banner .site-nav .drawer-toggle:hover, .site-banner .site-nav li:hover {
+  background-color: #2980b9;
+  color: #fff;
+}
+
 .site-banner .site-nav .drawer-toggle {
   display: none;
 }
@@ -424,7 +411,12 @@ header {
 }
 
 .site-banner .site-nav .menu-expand {
-  background-color: red;
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.sidebar a:link, .sidebar a:visited {
+  color: #404040;
 }
 
 @media screen and (max-width: 760px) {
@@ -475,7 +467,6 @@ header {
 }
 
 .comments-area {
-  display: none;
   background-color: white;
   border: #2a2b35 2px solid;
   padding: 1.618em 0 0 3.236em;

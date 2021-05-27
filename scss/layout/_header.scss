@@ -3,17 +3,17 @@ header {
   
   @include pc {
     // padding-top: 5em;
-    background-color: lightblue;
+    //background-color: lightblue;
   }
 
   @include tablet {
     // padding-top: 5em;
-    background-color: lightgreen;
+    //background-color: lightgreen;
   }
 
   @include phone {
     // padding-top: 4em;
-    background-color: lightcoral;
+    //background-color: lightcoral;
   }
 }
 

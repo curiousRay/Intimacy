@@ -92,9 +92,9 @@ function custom_body_class_by_category($classes) {
 		$classes[] = 'bg-texture-homepage';
 	} else
 
-	if ( in_category( 'uncategorized' ) || in_category( 'life' ) ) {
+	//if ( in_category( 'uncategorized' ) || in_category( 'life' ) ) {
 		$classes[] = 'bg-texture';
-	}
+	//}
 	return $classes;
 }
 add_filter('body_class', 'custom_body_class_by_category');
